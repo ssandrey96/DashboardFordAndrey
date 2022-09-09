@@ -1,0 +1,8 @@
+<div class="bg-white border" *ngIf="(veiculo$ | async) as veiculo">
+  <div class="row">
+    <div class="col-lg-8">
+      <app-veiculo
+      [vehicle]="veiculo.vehicle">
+    </app-veiculo>
+    </div>
+</div>
